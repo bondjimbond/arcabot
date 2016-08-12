@@ -18,7 +18,7 @@ items = random.sample(docs,1)
 for item in items:
   pid = item["PID"]
   title = item["mods_titleInfo_title_ms"][0]
-  url = "http://digital.library.yorku.ca/islandora/object/"
+  url = "http://arcabc.ca/islandora/object/"
   url += pid
   shorten_url = b.shorten(url)
   bitly_url = shorten_url["url"]
