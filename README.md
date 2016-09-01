@@ -20,6 +20,3 @@ Note that you'll need to tweak the primary script to use the appropriate title f
 
 Todo: 
 - Set a character limit on the Abstract and fields (this may just be part of the Solr query)
-
-Known bugs:
-- Queries to localhost for some reason won't return images like it does with York's
