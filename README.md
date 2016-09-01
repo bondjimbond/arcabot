@@ -5,6 +5,14 @@ This is a clone of [YUDLbot](https://github.com/yorkulibraries/YUDLbot) by Nick 
 
 If you want use it, you will need to setup the variables outlined in `config.py.example` and rename it to `config.py`. For `SOLR_DATA` you will need to construct a query, and append `&fl=PID%2C+mods_titleInfo_title_ms&wt=json&indent=true` along with the number of rows you want. For example `&rows=100`.
 
+## Configuration
+
+For instructions on acquiring a Twitter account and finding the API and user information needed, [see this handy tutorial](http://www.pygaze.org/2016/03/how-to-code-twitter-bot/).
+
+You will also need a [Bitly](http://bit.ly) account, and to [find your API key](http://support.bitly.com/knowledgebase/articles/76785-how-do-i-find-my-api-key-).
+
+## Solr query
+
 If you run a Solr search with Debug Mode turned on (Solr settings, "Other" tab), you can see the Solr query being used. This can provide some guidance for formulating your query in SOLR_DATA.
 
 Example internal SOLR_DATA query, grabbing all items from five CModels:
