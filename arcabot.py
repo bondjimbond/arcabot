@@ -22,5 +22,8 @@ for item in items:
   url += pid
   shorten_url = b.shorten(url)
   bitly_url = shorten_url["url"]
+  title_limit = 140 - (len(bitly_url) + 1)
+  if len(title) > title_limit:
+    title = title[:title_limit - 3] + "..."
   tweet_text = "%s %s" % (title,bitly_url)
   api.update_status(tweet_text)
